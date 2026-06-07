@@ -11,7 +11,7 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <style>
 
@@ -78,7 +78,7 @@ body{
 <nav class="navbar">
 
     <div class="logo">
-        <img src="assets/cybericon.png" alt="CyberRakshak">
+        <img src="cybericon.png" alt="CyberRakshak">
     <span>CyberRakshak</span>
     </div>
 
@@ -105,7 +105,7 @@ body{
 
         <h2>Admin Login</h2>
 
-        <form action="php/admin-login-process.php" method="POST">
+        <form action="admin-login-process.php" method="POST">
 
             <input
             type="email"
