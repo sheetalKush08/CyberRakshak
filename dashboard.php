@@ -22,14 +22,14 @@ if(!isset($_SESSION['user_id'])){
   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
    <nav class="navbar">
 
    <div class="logo">
-    <img src="assets/cybericon.png" alt="CyberRakshak">
+    <img src="cybericon.png" alt="CyberRakshak">
     <span>CyberRakshak</span>
 </div>
 
@@ -55,7 +55,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     You are successfully logged in.
   </p>
 
-  <a href="php/logout.php">
+  <a href="logout.php">
     Logout
   </a>
 
