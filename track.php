@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_id'])){
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 <style>
 
 body{
@@ -117,7 +117,7 @@ body{
 	<nav class="navbar">
 
     <div class="logo">
-        <img src="assets/cybericon.png" alt="CyberRakshak">
+        <img src="cybericon.png" alt="CyberRakshak">
     <span>CyberRakshak</span>
     </div>
 
@@ -142,7 +142,7 @@ body{
 <div class="form-container">
 
 <form
-action="php/track-process.php"
+action="track-process.php"
 method="POST"
 class="form-box"
 >
