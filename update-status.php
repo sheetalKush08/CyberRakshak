@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 session_start();
 
 if(!isset($_SESSION['admin_id'])){
-    header("Location: ../admin-login.php");
+    header("Location: admin-login.php");
     exit();
 }
 
@@ -26,7 +26,7 @@ $sql = "UPDATE complaints
 $result = mysqli_query($conn, $sql);
 
 if($result){
-    header("Location: ../admin-dashboard.php");
+    header("Location: admin-dashboard.php");
     exit();
 }else{
     die("Database Error: " . mysqli_error($conn));
