@@ -5,10 +5,9 @@ ini_set('display_errors', 1);
 
 session_start();
 
-/* Check Login */
 
 if(!isset($_SESSION['user_id'])){
-    header("Location: ../login.html");
+    header("Location: login.html");
     exit();
 }
 
@@ -16,22 +15,19 @@ include 'db.php';
 
 $user_id = $_SESSION['user_id'];
 
-/* Allow POST Only */
 
 if($_SERVER["REQUEST_METHOD"] != "POST"){
     die("Invalid Request");
 }
 
-/* Get Form Data */
 
 $crime_type = mysqli_real_escape_string($conn, $_POST['crime_type']);
 $description = mysqli_real_escape_string($conn, $_POST['description']);
 
-/* Generate Complaint ID */
+
 
 $complaint_id = "CYB" . date("Ymd") . rand(1000,9999);
 
-/* Validate File Upload */
 
 if(!isset($_FILES['evidence']) || $_FILES['evidence']['error'] != 0){
     die("Please upload evidence.");
@@ -55,7 +51,6 @@ if($filesize > 5 * 1024 * 1024){
     die("File size should be less than 5MB.");
 }
 
-/* Rename File */
 
 $newFileName = time() . "_" . rand(1000,9999) . "." . $fileExt;
 
@@ -67,13 +62,12 @@ if(!is_dir($uploadFolder)){
 
 $folder = $uploadFolder . $newFileName;
 
-/* Upload File */
+
 
 if(!move_uploaded_file($tempname, $folder)){
     die("File upload failed.");
 }
 
-/* Insert Complaint */
 
 $sql = "INSERT INTO complaints
 (
@@ -180,7 +174,7 @@ body{
         Please save your Complaint ID for future tracking.
     </p>
 
-    <a href="../dashboard.php">
+    <a href="dashboard.php">
         Go to Dashboard
     </a>
 
