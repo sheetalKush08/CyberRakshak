@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_id'])){
   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
 
 
@@ -80,6 +80,7 @@ body{
     cursor:pointer;
 }
 
+/* Button */
 
 .form-box button{
     width:100%;
@@ -118,7 +119,7 @@ body{
   <nav class="navbar">
 
     <div class="logo">
-        <img src="cybericon.png" alt="CyberRakshak">
+        <img src="assets/cybericon.png" alt="CyberRakshak">
     <span>CyberRakshak</span>
     </div>
 
@@ -143,7 +144,7 @@ body{
 <div class="form-container">
 
   <form 
-    action="report-process.php" 
+    action="php/report-process.php" 
     method="POST"
     enctype="multipart/form-data"
     class="form-box"
@@ -157,12 +158,33 @@ body{
         Select Crime Type
       </option>
 
-      <option>Phishing</option>
-      <option>OTP Fraud</option>
-      <option>UPI Scam</option>
-      <option>Identity Theft</option>
-      <option>Social Media Hack</option>
-
+     <option>Phishing</option>
+<option>OTP Fraud</option>
+<option>UPI Scam</option>
+<option>Identity Theft</option>
+<option>Social Media Hack</option>
+<option>Credit/Debit Card Fraud</option>
+<option>Online Shopping Fraud</option>
+<option>Fake Job Scam</option>
+<option>Cyber Bullying</option>
+<option>Email Spoofing</option>
+<option>Ransomware Attack</option>
+<option>Malware/Virus Attack</option>
+<option>Data Breach</option>
+<option>Online Investment Scam</option>
+<option>Fake Loan App Fraud</option>
+<option>QR Code Scam</option>
+<option>SIM Swap Fraud</option>
+<option>Fake Customer Care Scam</option>
+<option>Cyber Stalking</option>
+<option>Website Hacking</option>
+<option>Account Takeover</option>
+<option>Cryptocurrency Scam</option>
+<option>Online Gaming Fraud</option>
+<option>Matrimonial Fraud</option>
+<option>Digital Arrest Scam</option>
+<option>Deepfake Fraud</option>
+<option>Other</option>
     </select>
 
     <textarea
