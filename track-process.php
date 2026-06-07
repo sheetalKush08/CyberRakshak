@@ -7,7 +7,7 @@ include __DIR__ . '/db.php';
 
 // CHECK FORM SUBMISSION
 if(!isset($_POST['complaint_id'])){
-    header("Location: ../track.php");
+    header("Location: track.php");
     exit();
 }
 
@@ -28,7 +28,6 @@ $result = mysqli_query($conn, $sql);
 
 <style>
 
-/* BODY */
 body{
     background:#0F172A;
     color:white;
@@ -146,7 +145,7 @@ Status:
 
 <p><?php echo $row['description']; ?></p>
 
-<a href="../track.php">Track Another Complaint</a>
+<a href="track.php">Track Another Complaint</a>
 
 </div>
 
@@ -158,7 +157,7 @@ Status:
 
 <p>Please check your Complaint ID and try again.</p>
 
-<a href="../track.php">Try Again</a>
+<a href="track.php">Try Again</a>
 
 </div>
 
