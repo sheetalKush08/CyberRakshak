@@ -19,7 +19,7 @@ if(mysqli_num_rows($result) == 1){
 
         $_SESSION['admin_id'] = $admin['id'];
 
-        header("Location: ../admin-dashboard.php");
+        header("Location: admin-dashboard.php");
         exit();
 
     }
@@ -99,7 +99,7 @@ body{
         Please try again with correct credentials.
     </p>
 
-    <a href="../admin-login.php">
+    <a href="admin-login.php">
         Back to Admin Login
     </a>
 
