@@ -120,7 +120,7 @@ body{
         cyber safety services to citizens.
     </p>
 
-    <a href="../index.html" class="home-btn">
+    <a href="index.html" class="home-btn">
         Return to Home
     </a>
 
@@ -194,7 +194,7 @@ body{
 
 <p>Please try again later.</p>
 
-<a href="../index.html">Back to Home</a>
+<a href="index.html">Back to Home</a>
 
 </div>
 
