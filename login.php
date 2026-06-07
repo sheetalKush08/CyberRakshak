@@ -7,9 +7,8 @@ session_start();
 
 include 'db.php';
 
-// Check if form submitted
 if(!isset($_POST['email']) || !isset($_POST['password'])){
-    header("Location: ../login.html");
+    header("Location: login.html");
     exit();
 }
 
@@ -23,13 +22,12 @@ if($result && mysqli_num_rows($result) == 1){
 
     $user = mysqli_fetch_assoc($result);
 
-    // For hashed passwords
     if(password_verify($password, $user['password'])){
 
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_name'] = $user['fullname'];
 
-        header("Location: ../dashboard.php");
+        header("Location: dashboard.php");
         exit();
     }
 }
@@ -104,7 +102,7 @@ body{
         Please check your credentials and try again.
     </p>
 
-    <a href="../login.html">
+    <a href="login.html">
         Back to Login
     </a>
 
