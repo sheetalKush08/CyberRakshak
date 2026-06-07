@@ -10,7 +10,7 @@ if(!isset($_SESSION['admin_id'])){
     exit();
 }
 
-include 'php/db.php';
+include 'db.php';
 
 /* Dashboard Statistics */
 
@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $sql);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>CyberRakshak Admin Dashboard</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -174,7 +174,7 @@ button:hover{
 <nav class="navbar">
 
 <div class="logo">
-    <img src="assets/cybericon.png" alt="Logo">
+    <img src="cybericon.png" alt="Logo">
     <span>CyberRakshak</span>
 </div>
 
@@ -259,7 +259,7 @@ View File
 
 <td>
 
-<form action="php/update-status.php" method="POST">
+<form action="update-status.php" method="POST">
 
 <input
 type="hidden"
